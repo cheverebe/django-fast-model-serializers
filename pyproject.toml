@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "django-fast-model-serializers"
+version = "0.0.3"
+authors = [
+  { name="Alejandro Rebecchi", email="contacto@alejandrorebecchi.es" },
+]
+description = "An implementation of Django Rest Framework serializers with improved performance."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/cheverebe/django-fast-model-serializers"
+"Bug Tracker" = "https://github.com/cheverebe/django-fast-model-serializers/issues"
+
+[tool.hatch.build]
+include = [
+  "django_fast_model_serializers/*",
+]
